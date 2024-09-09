@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopiandi Personal Website</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("image/background.jpg");
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran elemen */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+.background-div {
+    background-color: #47d7ff80; /* Warna dengan transparansi */
+}
+
+
+p {
+    background-color: #1c1b1b;
+    color:#fff
+}
+
+h2 {
+    background-color: #1c1b1b;
+    color:#fff
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+buy-button {
+    background-color: hsl(133, 88%, 3%);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+buy-button {
+    background-color: #218838;
+}
+
+footer {    
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+</style>
+<body>
+    <header>
+        <nav style="text-align: center;">
+            <a href="index.html">Home</a> |
+            <a href="cv-iyan.pdf">Download CV</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="about.html">About me</a> |
+            <a href="Galeri.html">Galeri</a> 
+        
+        </nav>
+        <h1>SELAMAT DATANG DI GALERI YANN</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <article class="item">
+                <img src="image/gambar1.jpg" alt="BASRENG"> 
+                <h2>BASREN PEDAS</h2>
+                <p>HARGA 25.000</p>
+        </p>
+            </article>
+
+            <article class="item">
+                <img src="image/gambar2.jpg" alt="BASRENG">
+                <h2>BASRENG ORIGINAL</h2>
+                <p>HARGA 15.000</p>
+            </article>
+
+            <article class="item">
+                <img src="image/gambar3.jpg" alt="BASRENG">
+                <h2>BASRENG KARANEL</h2>
+                <p>HARGA 10.000</p>
+            </article>
+            <!-- Tambahkan lebih banyak gambar di sini -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2024 Sopiandi.</p>
+    </footer>
+    
+</body>
+</html>

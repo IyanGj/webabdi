@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopiandi Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cv-iyan.pdf">Download CV</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About me</a> |
+        <a href="Galeri.html">Galeri</a> 
+    </nav>
+
+    <main>
+        <h1>Contact Me</h1>
+        <form onsubmit="sendMessage(); return false;">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" placeholder="Your phone number" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Your message..." rows="4" required></textarea>
+            <input type="submit" value="KirimBoss">
+        </form>
+        <div class="success-message" id="success-message">
+            Okee Nice boskuh, jangan lupa subrek...!!!
+        </div>
+    </main>
+    <script>
+        function sendMessage() {
+            // Simulating message sending
+            document.getElementById('success-message').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('success-message').style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+
+<hr>
+<footer style="text-align: center;">
+    <p style="color:#fcf8f8;background-color:#000 ; padding: 20px;">Copyright &copy; 2024 Sopiandi.</p>
+</footer>
+
+</html>
